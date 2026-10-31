@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gerald's Pigeon-Run Bakery</title>
+<style>
+  :root {
+    --bg: #fff8ec; --fg: #2b2118; --accent: #c4571a; --card: #ffffff;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #1e1812; --fg: #f3e8d8; --accent: #f08a4b; --card: #2a2219; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 18px/1.6 Georgia, serif; }
+  main { max-width: 36rem; margin: 0 auto; padding: 2rem 1.25rem; }
+  h1 { color: var(--accent); margin-bottom: 0; }
+  .tag { font-style: italic; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  .card { background: var(--card); padding: 1rem 1.25rem; border-radius: 8px; margin: 1.5rem 0; }
+  button { font: inherit; background: var(--accent); color: var(--bg); border: 0; padding: .5rem 1rem; border-radius: 6px; cursor: pointer; }
+  footer { font-size: .8rem; opacity: .7; }
+</style>
+</head>
+<body>
+<main>
+  <h1>🥐 Gerald’s Pigeon-Run Bakery</h1>
+  <p class="tag">Est. last Tuesday. Mostly crumbs.</p>
+
+  <p>Welcome! Our bakery is staffed entirely by pigeons, who work for bread and a modest amount of respect. Every loaf is inspected by Gerald, who is not a pigeon but insists he is “management”.</p>
+
+  <h2>Today’s menu</h2>
+  <ul>
+    <li>Sourdough (slightly pecked)</li>
+    <li>Cinnamon swirl, with extra swirl</li>
+    <li>Baguette, approximately 1.3 meters</li>
+    <li>Mystery muffin (do not ask)</li>
+  </ul>
+
+  <div class="card">
+    <strong>Pigeon wisdom of the moment:</strong>
+    <p id="quote">“A crumb on the ground is worth two in the oven.”</p>
+    <button id="btn">Consult another pigeon</button>
+  </div>
+
+  <footer>Open whenever the pigeons feel like it. No refunds, only coos.</footer>
+</main>
+<script>
+  const quotes = [
+    "“A crumb on the ground is worth two in the oven.”",
+    "“Never trust a loaf that doesn’t cool properly.”",
+    "“Flap first, ask questions later.”",
+    "“The early bird gets the croissant.”",
+    "“Rise slowly, like good dough.”",
+    "“Every statue is just a tall perch.”"
+  ];
+  let i = 0;
+  document.getElementById("btn").addEventListener("click", () => {
+    i = (i + 1) % quotes.length;
+    document.getElementById("quote").textContent = quotes[i];
+  });
+</script>
+</body>
+</html>

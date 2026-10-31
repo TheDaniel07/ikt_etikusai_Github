@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etikus MI használat</title>
+    <link rel="icon" type="image/png" href="/images/irobot2.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Menü megnyitása">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-auto gap-1 gap-md-4 gap-lg-5 mt-3 mt-md-0 text-center">
+            <li class="nav-item"><a class="nav-link" href="#fooldal"><h1>Etikus AI</h1></a></li>
+            <li class="nav-item"><a class="nav-link" href="#peldaoldal"><h1>Példa Oldal</h1></a></li>
+            <li class="nav-item"><a class="nav-link" href="#about"><h1>About</h1></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-grow-1 container-xl px-3 px-md-4 py-3 py-md-4" id="fooldal">
+
+      <section>
+        <h2 class="cim">Etikus MI használat</h2>
+        <div class="doboz p-3 p-md-4 mb-4">
+          <p class="szoveg mb-0">A generatív MI mindennapunk részévé vált, miközben jogi, etikai és környezeti kérdéseket vet fel. Célunk, hogy a látogatók félelem vagy túlzott rajongás helyett megalapozottan, a kockázatokat és előnyöket mérlegelve használják az eszközöket.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="cim">Szerzői jogok</h2>
+        <div class="doboz p-3 p-md-4 mb-4">
+          <p class="szoveg">Szabad-e védett műveken tanítani az MI-t, és mi történik, ha a modell szó szerint visszaadja azokat?</p>
+          <!-- Javítva: a <ul> nem lehet <p>-ben, ezért a <p> kikerült -->
+          <ul class="szovegli szoveg mb-0 ps-3 ps-md-4">
+            <li class="mb-2">A helyzet: 2025 novemberében ellentétes ítéletek születtek. Az angol High Court elutasította a Getty Images keresetét a Stability AI ellen (a modell súlyai nem minősülnek jogsértő másolatnak – a fellebbezés tárgyalása 2026. november 10-én lesz). Ezzel szemben a müncheni bíróság a GEMA-ügyben elmarasztalta az OpenAI-t (GPT-4/4o), mert a rendszer teljes szövegeket memorizál, így nem vonatkozik rá az EU szövegbányászati kivétele.</li>
+            <li>Etikus használat: Mindig adj meg forrást, kerüld a védett szövegek visszamásoltatását, és ellenőrizd a szolgáltató felhasználási feltételeit.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="cim">Deepfake</h2>
+        <div class="doboz p-3 p-md-4 mb-4">
+          <p class="szoveg">A deepfake mesterséges intelligenciával készített vagy módosított kép-, hang- vagy videótartalom, amely valós személyek arcát, hangját vagy mozgását hitelesen utánozza. A technológia fejlődésével egyre nehezebb megkülönböztetni a hamisítványt az eredetitől, ezért félrevezetésre, csalásra és álhírek terjesztésére is használható.</p>
+          <ul class="szovegli szoveg mb-0 ps-3 ps-md-4">
+            <li>Etikus használat: Csak az érintett beleegyezésével készíts vagy oszts meg ilyen tartalmat, és mindig jelöld, ha mesterségesen generált.</li>
+          </ul>
+        </div>
+      </section>
+        <section>
+            <h2 class="cim" id="peldaoldal">Példa oldal</h2>
+            <div class="doboz p-3 p-md-4 mb-4">
+            <p class="szoveg">A generatív MI modellek ma már nemcsak szövegek vagy képek előállítására képesek, hanem komplett, működő weboldalak megírására is. Ez a technológia jelentősen felgyorsítja a fejlesztési folyamatot és a prototípusok készítését, miközben új lehetőségeket nyit meg a webdesignban; ehhez itt találhatunk is egy példát: <a  href="peldaoldal.html" target ="_blank">Példa Oldal</a></p>
+            </div>
+        </section>
+        <h2 class="cim">Interaktív elemek:</h2>
+        <section>
+            <h2 class="cim" id="about">Czutor Balázs eleme:</h2>
+            <div class="doboz p-3 p-md-4 mb-4">
+            <p class="szoveg"></p>
+            </div>
+        </section>
+        <section>
+  <h2 class="cim" id="about">Czihlár Márton eleme: Deepfake</h2>
+  <div class="doboz p-3 p-md-4 mb-4">
+    <p class="szoveg">Ismerd fel melyik videó valódi és melyik deepfake.</p>
+
+    <div class="row g-3">
+      <div class="col-12 col-md-6">
+        <div class="doboz p-3 p-md-4 h-100">
+          <video class="w-100" autoplay muted loop hidecontrols>
+            <source src="videos/video1.mp4" type="video/mp4">
+            A böngésződ nem támogatja a videó lejátszását.
+          </video>
+          <button type="button" class="btn btn-primary w-100 mt-3 tipp-gomb" data-deepfake="false">
+            Ez a deepfake
+          </button>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="doboz p-3 p-md-4 h-100">
+          <video class="w-100" autoplay muted loop hidecontrols>
+            <source src="videos/video2.mp4" type="video/mp4">
+            A böngésződ nem támogatja a videó lejátszását.
+          </video>
+          <button type="button" class="btn btn-primary w-100 mt-3 tipp-gomb" data-deepfake="true">
+            Ez a deepfake
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <p id="eredmeny" class="szoveg fw-bold mt-3 mb-0" aria-live="polite"></p>
+  </div>
+</section>
+    </main>
+
+
+    <footer class="text-center py-3 mt-auto">
+      <div class="container-fluid">
+        <h4 class="mb-0">&copy; 2026, Berkesi Márton, Czutor Balázs, Czihlár Márton.</h4>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

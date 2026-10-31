@@ -1,0 +1,104 @@
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar, footer{
+    background-color: rgb(195, 195, 195);
+}
+.navbar .nav-link h1 { 
+    font-size: clamp(1.1rem, 1rem + 0.8vw, 1.75rem); 
+    margin: 0; 
+}
+footer h4 { font-size: clamp(0.75rem, 0.7rem + 0.4vw, 1.1rem); }
+
+body {
+    background: linear-gradient(135deg, #f6efe4, #d9eeea);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #1d2433;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 70px;
+}
+
+.doboz {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      text-align: center;
+      overflow-wrap: anywhere;
+
+}
+
+.cim {
+      order: 2; 
+      margin-top: 20px;
+      font-size: 35px;
+      color: #1d2433;
+      text-align: center;
+      font-size: clamp(1.4rem, 1rem + 2vw, 2.25rem);
+}
+
+.szoveg {
+      order: 1; 
+      font-size: 20px;
+      color: #333333;
+      line-height: 1.5;
+      font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.125rem);
+}
+.szoveg {
+      order: 1; 
+      font-size: 24px;
+      color: #333333;
+      line-height: 1.5;
+      text-align: left;
+}
+.szovegli{
+      order: 1; 
+      font-size: 22px;
+      color: #333333;
+      line-height: 1.5;
+      text-align: left;
+}
+footer {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.cim {
+  text-align: center;
+}
+.doboz {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100%;
+  max-width: 800px; 
+}
+a {
+  color: #b700ff;
+  text-decoration: none;
+}
+
+    
