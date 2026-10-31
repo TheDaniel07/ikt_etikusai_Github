@@ -22,7 +22,7 @@
           <ul class="navbar-nav mx-auto gap-1 gap-md-4 gap-lg-5 mt-3 mt-md-0 text-center">
             <li class="nav-item"><a class="nav-link" href="#fooldal"><h1>Etikus AI</h1></a></li>
             <li class="nav-item"><a class="nav-link" href="#peldaoldal"><h1>Példa Oldal</h1></a></li>
-            <li class="nav-item"><a class="nav-link" href="#about"><h1>About</h1></a></li>
+            <li class="nav-item"><a class="nav-link" href="#interaktív-elemek"><h1>Interaktív elemek</h1></a></li>
           </ul>
         </div>
       </div>
@@ -41,7 +41,6 @@
         <h2 class="cim">Szerzői jogok</h2>
         <div class="doboz p-3 p-md-4 mb-4">
           <p class="szoveg">Szabad-e védett műveken tanítani az MI-t, és mi történik, ha a modell szó szerint visszaadja azokat?</p>
-          <!-- Javítva: a <ul> nem lehet <p>-ben, ezért a <p> kikerült -->
           <ul class="szovegli szoveg mb-0 ps-3 ps-md-4">
             <li class="mb-2">A helyzet: 2025 novemberében ellentétes ítéletek születtek. Az angol High Court elutasította a Getty Images keresetét a Stability AI ellen (a modell súlyai nem minősülnek jogsértő másolatnak – a fellebbezés tárgyalása 2026. november 10-én lesz). Ezzel szemben a müncheni bíróság a GEMA-ügyben elmarasztalta az OpenAI-t (GPT-4/4o), mert a rendszer teljes szövegeket memorizál, így nem vonatkozik rá az EU szövegbányászati kivétele.</li>
             <li>Etikus használat: Mindig adj meg forrást, kerüld a védett szövegek visszamásoltatását, és ellenőrizd a szolgáltató felhasználási feltételeit.</li>
@@ -64,15 +63,26 @@
             <p class="szoveg">A generatív MI modellek ma már nemcsak szövegek vagy képek előállítására képesek, hanem komplett, működő weboldalak megírására is. Ez a technológia jelentősen felgyorsítja a fejlesztési folyamatot és a prototípusok készítését, miközben új lehetőségeket nyit meg a webdesignban; ehhez itt találhatunk is egy példát: <a  href="peldaoldal.html" target ="_blank">Példa Oldal</a></p>
             </div>
         </section>
-        <h2 class="cim">Interaktív elemek:</h2>
+        <h2 class="cim" id="interaktív-elemek">Interaktív elemek:</h2>
+
+
         <section>
-            <h2 class="cim" id="about">Czutor Balázs eleme:</h2>
+            <h2 class="cim">Czutor Balázs eleme:</h2>
             <div class="doboz p-3 p-md-4 mb-4">
-            <p class="szoveg"></p>
+            <p class="szoveg">
+              Kattints arra a képre, amelyik szerinted mesterséges intelligenciával készült.
+            </p>
+            <div class="bar"><span id="round"></span><span id="score"></span></div>
+            <div class="pair" id="pair"></div>
+            <p class="msg" id="msg" role="status" aria-live="polite"></p>
+            <button class="btn btn-primary next" id="next" hidden>Következő kör</button>
+            <button class="btn btn-secondary again" id="again" hidden>Új játék</button>
             </div>
         </section>
         <section>
-  <h2 class="cim" id="about">Czihlár Márton eleme: Deepfake</h2>
+
+
+  <h2 class="cim">Czihlár Márton eleme: Deepfake</h2>
   <div class="doboz p-3 p-md-4 mb-4">
     <p class="szoveg">Ismerd fel melyik videó valódi és melyik deepfake.</p>
 
