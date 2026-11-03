@@ -1,3 +1,24 @@
+:root {
+    --bg-1: #f6efe4;
+    --bg-2: #d9eeea;
+    --nav-bg: rgb(195, 195, 195);
+    --box-bg: #ffffff;
+    --text: #333333;
+    --title: #1d2433;
+    --link: #b700ff;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+[data-bs-theme="dark"] {
+    --bg-1: #1d1a16;
+    --bg-2: #10211f;
+    --nav-bg: rgb(38, 40, 44);
+    --box-bg: #1f2430;
+    --text: #e3e6ec;
+    --title: #f1f3f7;
+    --link: #d98bff;
+    --box-shadow: rgba(0, 0, 0, 0.5);
+}
 .navbar-nav .nav-link {
     position: relative;
 }
@@ -19,8 +40,8 @@
     transform: scaleX(1);
 }
 
-.navbar, footer{
-    background-color: rgb(195, 195, 195);
+.navbar, footer {
+    background-color: var(--nav-bg);
 }
 .navbar .nav-link h1 { 
     font-size: clamp(1.1rem, 1rem + 0.8vw, 1.75rem); 
@@ -29,10 +50,10 @@
 footer h4 { font-size: clamp(0.75rem, 0.7rem + 0.4vw, 1.1rem); }
 
 body {
-    background: linear-gradient(135deg, #f6efe4, #d9eeea);
+    background: linear-gradient(135deg, var(--bg-1), var(--bg-2));
     background-attachment: fixed;
     min-height: 100vh;
-    color: #1d2433;
+    color: var(--title);
     justify-content: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -40,10 +61,10 @@ body {
 }
 
 .doboz {
-      background-color: #ffffff;
+      background-color: var(--box-bg);
       padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 15px var(--box-shadow);
       max-width: 800px;
       text-align: center;
       overflow-wrap: anywhere;
@@ -54,29 +75,23 @@ body {
       order: 2; 
       margin-top: 20px;
       font-size: 35px;
-      color: #1d2433;
+      color: var(--title);
       text-align: center;
       font-size: clamp(1.4rem, 1rem + 2vw, 2.25rem);
 }
 
 .szoveg {
-      order: 1; 
-      font-size: 20px;
-      color: #333333;
-      line-height: 1.5;
-      font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.125rem);
+  order: 1;
+  font-size: 24px;
+  color: var(--text);
+  line-height: 1.5;
+  text-align: left;
 }
-.szoveg {
-      order: 1; 
-      font-size: 24px;
-      color: #333333;
-      line-height: 1.5;
-      text-align: left;
-}
+
 .szovegli{
       order: 1; 
       font-size: 22px;
-      color: #333333;
+      color: var(--text);
       line-height: 1.5;
       text-align: left;
 }
@@ -97,7 +112,7 @@ footer {
   max-width: 800px; 
 }
 a {
-  color: #b700ff;
+  color: var(--link);
   text-decoration: none;
 }
 
