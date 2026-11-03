@@ -19,9 +19,9 @@
   });
 
 const ROUNDS = [
-  { ai: "/images/game/Landscape2.png", real: "/images/game/Landscape1.png" },
-  { ai: "/images/game/Pizza2.png", real: "/images/game/Pizza1.png" },
-  { ai: "/images/game/Sunflower2.png", real: "/images/game/Sunflower1.png" },
+  { ai: "images/game/Landscape2.png", real: "images/game/Landscape1.png" },
+  { ai: "images/game/Pizza2.png", real: "images/game/Pizza1.png" },
+  { ai: "images/game/Sunflower2.png", real: "images/game/Sunflower1.png" },
 ];
 
 const TXT = {
