@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    image: ikt-etikus-mi:latest
+    container_name: ikt-etikus-mi
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
